@@ -50,6 +50,8 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 /*measures the height of a binary tree*/
 size_t binary_tree_height(const binary_tree_t *tree);
+/*measures the depth of a node in a binary tree*/
+size_t binary_tree_depth(const binary_tree_t *tree);
 
 
 #endif
