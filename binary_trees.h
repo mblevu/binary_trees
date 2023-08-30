@@ -40,6 +40,10 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
 void binary_tree_delete(binary_tree_t *tree);
 /*checks if a node is a leaf*/
 int binary_tree_is_leaf(const binary_tree_t *node);
+/*checks if a given node is a root*/
+int binary_tree_is_root(const binary_tree_t *node);
+/*goes through a binary tree using pre-order traversal*/
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 
 
 #endif
