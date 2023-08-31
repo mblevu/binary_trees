@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 
+
 /**
  * struct binary_tree_s - Binary tree node
  *
@@ -27,6 +28,7 @@ typedef struct binary_tree_s
  * Function prototypes
  * --------------------
  */
+
 
 /*create a binary tree node*/
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
@@ -60,6 +62,11 @@ size_t binary_tree_leaves(const binary_tree_t *tree);
 size_t binary_tree_nodes(const binary_tree_t *tree);
 /*measures the balance factor of a binary tree*/
 int binary_tree_balance(const binary_tree_t *tree);
+/*checks if a binary tree is full*/
+int binary_tree_is_full(const binary_tree_t *tree);
+ /* binary_tree_is_perfect - Checks if a binary tree is perfect*/
+int binary_tree_is_perfect(const binary_tree_t *tree);
+
 
 
 #endif
